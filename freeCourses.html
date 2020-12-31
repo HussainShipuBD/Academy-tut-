@@ -1,0 +1,533 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Acameny</title>
+		<!-- Font family -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<!-- BOOTSTRAP GRID CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<!-- COMMON CSS -->
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- RESPONSIVE CSS -->
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+		
+	</head>
+	<body>
+		<div id="main-wrapper">
+			<!-- Menu --> 
+			<nav v-if="$route.path != '/login' && $route.path != '/signUp'" class="_menu">
+			  <div class="_menu_con">
+				<div class="_menu_main">
+				  <div class="_menu_logo">
+					<div class="_menu_logo_pic">
+					  <a href="index.html"><img class="_menu_logo_img" style="margin-left: -39px;" src="img/logo.png" alt="" title=""></a>
+					</div>
+				  </div>
+	  
+				  <div class="_menu_search">
+					<div class="_menu_search_main">
+					  <div class="_menu_search_icon"><i class="fas fa-search"></i></div>
+					  <div class="_menu_search_input">
+						<input type="text" placeholder="What is your course">
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="_menu_right">
+					<ul class="_menu_right_ul">
+					  <li>
+						<select class="_menu_right_select">
+						  <option value="volvo">English</option>
+						  <option value="volvo">Bangla</option>
+						</select>
+					  </li>
+	  
+					  <li><a href="" href="signUp.html">Add New Account</a></li>
+	  
+					  <li>
+						<button class="_1btn _pre_icon" type="button"><i class="fas fa-user"></i> My Profile</button>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+			<!-- Menu end -->
+	  
+			<!-- Menu List -->
+			<div v-if="$route.path != '/login' && $route.path != '/signUp'" class="_menu_list">
+				<ul class="_menu_list_ul">
+					<li>
+					  <a href="index.html">Home</a>
+					</li>
+					<li>
+					  <a href="about.html">About</a>
+					</li>
+					<li>
+					  <a href="courses.html">Courses</a>
+					</li>
+					<li>
+					  <a href="bundleCourses.html">Bundle Courses</a>
+					</li>
+					<li class="_active">
+					  <a href="freeCourses.html">Free Courses</a>
+					</li>
+					<li>
+					  <a href="blog.html">Blog</a>
+					</li>
+					<li>
+					  <a href="contact.html">Contact</a>
+					</li>
+					<li>
+					  <a href="faq.html">Faq</a>
+					</li>
+					<li>
+					  <a href="forum.html">Forum</a>
+					</li>
+				</ul>
+	  
+				<div class="_menu_social">
+					<ul class="_menu_social_list">
+						<li>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fa-youtube"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Menu List -->
+	  
+			<div class="_main_layout">
+				<div class="_1main_content">
+                    <!-- Banner -->
+                    <div class="_2banner">
+                        <div class="container">
+                            <h2 class="_2banner_title">Free Courses</h2>
+                            <ul class="_2banner_menu">
+                                <li>
+                                    <a href="">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="">FREE COURSES</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="_2banner_layer_one"></div>
+                        <div class="_2banner_layer_two"></div>
+                    </div>
+                    <!-- Banner -->
+        
+                    <!-- Main content -->
+                    <div class="_courses">
+                        <div class="container">
+                            <div class="_courses_main">
+                                <h2 class="_1title _mar_b30">Our Free Courses</h2>
+        
+                                <div class="_filter">
+                                    <div class="_filter_left">
+                                        <p class="_filter_title">Showing 1-6 of 12 results</p>
+                                    </div>
+        
+                                    <div class="_filter_right">
+                                        <div class="_filter_select_all">
+                                            <div class="_filter_select">
+                                                <select class="_1select">
+                                                    <option>Popular</option>
+                                                    <option>Most Popular</option>
+                                                    <option>Very Popular</option>
+                                                </select>
+                                            </div>
+        
+                                            <div class="_filter_select">
+                                                <select class="_1select">
+                                                    <option>Select Order</option>
+                                                    <option>Most Popular</option>
+                                                    <option>Very Popular</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="_courses_card_all">
+                                    <div class="row">
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_ourCourse_card _mar_b30">
+                                                <div class="_ourCourse_card_pic">
+                                                    <img src="img/photo.jpg" alt="" title="" class="_ourCourse_card_img"> 
+                                                    <p class="_ourCourse_card_pic_text">Development</p>
+                                                </div> 
+        
+                                                <div class="_ourCourse_card_bottom">
+                                                    <h2 class="_ourCourse_card_title">Web design from beginner to Advanced</h2> 
+                                                    <p class="_ourCourse_card_text">First you need import component to your code. To use the component...</p> 
+                                                    <div class="_ourCourse_card_number">
+                                                        <p class="_ourCourse_card_number_text"><i class="far fa-clock"></i> 22 hour</p> 
+                                                        <p class="_ourCourse_card_number_text"><i class="fas fa-tag"></i> 23000</p>
+                                                    </div> 
+                                                    <div class="_ourCourse_card_by_main">
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _one">
+                                                                <i class="fas fa-user"></i>
+                                                            </div> 
+                                                            <p class="_ourCourse_card_by_text">By Hussain shipu</p>
+                                                        </div> 
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _two"><i class="fas fa-star"></i></div> 
+                                                            <p class="_ourCourse_card_by_text">4.722</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_ourCourse_card _mar_b30">
+                                                <div class="_ourCourse_card_pic">
+                                                    <img src="img/one.png" alt="" title="" class="_ourCourse_card_img"> 
+                                                    <p class="_ourCourse_card_pic_text">Development</p>
+                                                </div> 
+        
+                                                <div class="_ourCourse_card_bottom">
+                                                    <h2 class="_ourCourse_card_title">Web design from beginner to Advanced</h2> 
+                                                    <p class="_ourCourse_card_text">First you need import component to your code. To use the component...</p> 
+                                                    <div class="_ourCourse_card_number">
+                                                        <p class="_ourCourse_card_number_text"><i class="far fa-clock"></i> 22 hour</p> 
+                                                        <p class="_ourCourse_card_number_text"><i class="fas fa-tag"></i> 23000</p>
+                                                    </div> 
+                                                    <div class="_ourCourse_card_by_main">
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _one">
+                                                                <i class="fas fa-user"></i>
+                                                            </div> 
+                                                            <p class="_ourCourse_card_by_text">By Hussain shipu</p>
+                                                        </div> 
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _two"><i class="fas fa-star"></i></div> 
+                                                            <p class="_ourCourse_card_by_text">4.722</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_ourCourse_card _mar_b30">
+                                                <div class="_ourCourse_card_pic">
+                                                    <img src="img/two.png" alt="" title="" class="_ourCourse_card_img"> 
+                                                    <p class="_ourCourse_card_pic_text">Development</p>
+                                                </div> 
+        
+                                                <div class="_ourCourse_card_bottom">
+                                                    <h2 class="_ourCourse_card_title">Web design from beginner to Advanced</h2> 
+                                                    <p class="_ourCourse_card_text">First you need import component to your code. To use the component...</p> 
+                                                    <div class="_ourCourse_card_number">
+                                                        <p class="_ourCourse_card_number_text"><i class="far fa-clock"></i> 22 hour</p> 
+                                                        <p class="_ourCourse_card_number_text"><i class="fas fa-tag"></i> 23000</p>
+                                                    </div> 
+                                                    <div class="_ourCourse_card_by_main">
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _one">
+                                                                <i class="fas fa-user"></i>
+                                                            </div> 
+                                                            <p class="_ourCourse_card_by_text">By Hussain shipu</p>
+                                                        </div> 
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _two"><i class="fas fa-star"></i></div> 
+                                                            <p class="_ourCourse_card_by_text">4.722</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_ourCourse_card _mar_b30">
+                                                <div class="_ourCourse_card_pic">
+                                                    <img src="img/three.png" alt="" title="" class="_ourCourse_card_img"> 
+                                                    <p class="_ourCourse_card_pic_text">Development</p>
+                                                </div> 
+        
+                                                <div class="_ourCourse_card_bottom">
+                                                    <h2 class="_ourCourse_card_title">Web design from beginner to Advanced</h2> 
+                                                    <p class="_ourCourse_card_text">First you need import component to your code. To use the component...</p> 
+                                                    <div class="_ourCourse_card_number">
+                                                        <p class="_ourCourse_card_number_text"><i class="far fa-clock"></i> 22 hour</p> 
+                                                        <p class="_ourCourse_card_number_text"><i class="fas fa-tag"></i> 23000</p>
+                                                    </div> 
+                                                    <div class="_ourCourse_card_by_main">
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _one">
+                                                                <i class="fas fa-user"></i>
+                                                            </div> 
+                                                            <p class="_ourCourse_card_by_text">By Hussain shipu</p>
+                                                        </div> 
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _two"><i class="fas fa-star"></i></div> 
+                                                            <p class="_ourCourse_card_by_text">4.722</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_ourCourse_card _mar_b30">
+                                                <div class="_ourCourse_card_pic">
+                                                    <img src="img/four.png" alt="" title="" class="_ourCourse_card_img"> 
+                                                    <p class="_ourCourse_card_pic_text">Development</p>
+                                                </div> 
+        
+                                                <div class="_ourCourse_card_bottom">
+                                                    <h2 class="_ourCourse_card_title">Web design from beginner to Advanced</h2> 
+                                                    <p class="_ourCourse_card_text">First you need import component to your code. To use the component...</p> 
+                                                    <div class="_ourCourse_card_number">
+                                                        <p class="_ourCourse_card_number_text"><i class="far fa-clock"></i> 22 hour</p> 
+                                                        <p class="_ourCourse_card_number_text"><i class="fas fa-tag"></i> 23000</p>
+                                                    </div> 
+                                                    <div class="_ourCourse_card_by_main">
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _one">
+                                                                <i class="fas fa-user"></i>
+                                                            </div> 
+                                                            <p class="_ourCourse_card_by_text">By Hussain shipu</p>
+                                                        </div> 
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _two"><i class="fas fa-star"></i></div> 
+                                                            <p class="_ourCourse_card_by_text">4.722</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_ourCourse_card _mar_b30">
+                                                <div class="_ourCourse_card_pic">
+                                                    <img src="img/six.png" alt="" title="" class="_ourCourse_card_img"> 
+                                                    <p class="_ourCourse_card_pic_text">Development</p>
+                                                </div> 
+        
+                                                <div class="_ourCourse_card_bottom">
+                                                    <h2 class="_ourCourse_card_title">Web design from beginner to Advanced</h2> 
+                                                    <p class="_ourCourse_card_text">First you need import component to your code. To use the component...</p> 
+                                                    <div class="_ourCourse_card_number">
+                                                        <p class="_ourCourse_card_number_text"><i class="far fa-clock"></i> 22 hour</p> 
+                                                        <p class="_ourCourse_card_number_text"><i class="fas fa-tag"></i> 23000</p>
+                                                    </div> 
+                                                    <div class="_ourCourse_card_by_main">
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _one">
+                                                                <i class="fas fa-user"></i>
+                                                            </div> 
+                                                            <p class="_ourCourse_card_by_text">By Hussain shipu</p>
+                                                        </div> 
+                                                        <div class="_ourCourse_card_by">
+                                                            <div class="_ourCourse_card_by_pic _two"><i class="fas fa-star"></i></div> 
+                                                            <p class="_ourCourse_card_by_text">4.722</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+        
+                                        <!-- Pagination -->
+                                        <div class="col-12 col-md-12 col-lg-12 _text_right">
+                                            <Page :total="100" />
+                                        </div>
+                                        <!-- Pagination -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main content -->
+                </div>
+	  
+			  <!-- Search -->
+			  <section v-if="$route.path != '/faq' && $route.path != '/forum' && $route.path != '/login' && $route.path != '/signUp'" class="_homeSearch">
+				  <div class="container">
+					  <div class="row align-items-end">
+						  <div class="col-12 col-md-6 col-lg-6">
+							  <div class="_homeSearch_left">
+								  <p class="_homeSearch_text">The Beginning of a New Asset Class</p>
+								  <h2 class="_homeSearch_left_title">Frequently Asked Questions</h2>
+							  </div>
+						  </div>
+	  
+						  <div class="col-12 col-md-6 col-lg-6">
+							  <div class="_homeSearch_main">
+								  <i class="fas fa-search"></i>
+								  <div class="_homeSearch_main_input">
+									  <input type="text" placeholder="Ask anything what do want to know?">
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </section>
+			  <!-- Search -->
+	  
+			  <!-- Footer -->
+			  <div v-if="$route.path != '/login' && $route.path != '/signUp'" class="_footer">
+				<div class="_footer_top">
+				  <div class="container">
+					<div class="row">
+					  <div class="col-12 col-md-5 col-lg-5">
+						<a href="">
+						  <img class="_footer_logo" src="img/footer_logo.png" alt="" title="">
+						</a>
+	  
+						<ul class="_footer_info">
+						  <li><i class="fas fa-envelope"></i> info@get-tutors.com</li>
+						  <li><i class="fas fa-map-marker-alt"></i> 59 West 46th Street, New York City. USA</li>
+						</ul>
+	  
+						<div class="_footer_search">
+						  <p class="_footer_search_label">Enter your email</p>
+						  <div class="_footer_search_main">
+							<div class="_footer_search_main_input">
+							  <input type="" placeholder="Your email address">
+							</div>
+	  
+							<button class="_footer_search_button"><i class="fas fa-arrow-right"></i></button>
+						  </div>
+						</div>
+	  
+						<ul class="_footer_social">
+						  <li>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+						  </li>
+						  <li>
+							<a href=""><i class="fab fa-twitter"></i></a>
+						  </li>
+						  <li>
+							<a href=""><i class="fab fa-instagram"></i></a>
+						  </li>
+						</ul>
+					  </div>
+	  
+					  <div class="col-12 col-md col-lg">
+						<p class="_footer_title">Usefull Links</p>
+	  
+						<ul class="_footer_list">
+						  <li>
+							<a href="">Become a Students</a>
+						  </li>
+						  <li>
+							<a href="">Start Tution</a>
+						  </li>
+						  <li>
+							<a href="">Addiction Help</a>
+						  </li>
+						  <li>
+							<a href="">Our Consultant </a>
+						  </li>
+						  <li>
+							<a href="">Management</a>
+						  </li>
+						</ul>
+					  </div>
+	  
+					  <div class="col-12 col-md col-lg">
+						<p class="_footer_title">About</p>
+	  
+						<ul class="_footer_list">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="courses.html">Courses</a>
+							</li>
+							<li>
+								<a href="bundleCourses.html">Bundle Courses</a>
+							</li>
+							<li>
+								<a href="freeCourses.html">Free Courses</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a href="faq.html">Faq</a>
+							</li>
+							<li>
+								<a href="forum.html">Forum</a>
+							</li>
+						</ul>
+					  </div>
+	  
+					  <div class="col-12 col-md col-lg">
+						<p class="_footer_title">Terns</p>
+	  
+						<ul class="_footer_list">
+						  <li>
+							<a href="">Privacy Policy</a>
+						  </li>
+						  <li>
+							<a href="">Terns & Conditions</a>
+						  </li>
+						  <li>
+							<a href="">Copyright Policy</a>
+						  </li>
+						  <li>
+							<a href="">Security</a>
+						  </li>
+						  <li>
+							<a href="">Fees & Change</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="_footer_bottom">
+				  <div class="container">
+					<div class="_footer_bottom_main">
+					  <div class="_footer_bottom_items">
+						<p class="_footer_bottom_text">Terms & Condition</p>
+					  </div>
+					  <div class="_footer_bottom_items">
+						<p class="_footer_bottom_text">89,8765 Registered Students</p>
+					  </div>
+					  <div class="_footer_bottom_items">
+						<p class="_footer_bottom_text">All right reserved@shoemaster 2020</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Footer -->
+			</div>
+		  </div>    
+	</body>
+</html>

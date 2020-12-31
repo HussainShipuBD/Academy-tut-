@@ -1,0 +1,304 @@
+/* Mobile */
+@media only screen and (max-width: 765px) {
+._login {
+    height: auto;
+}
+._login_left {
+    flex: 0 0 100%;
+    height: 372px;
+}
+._login_left_img {
+    height: auto;
+    width: 300px;
+    margin: 0 auto;
+}
+._login_right {
+    height: auto;
+    padding: 38px 15px;
+}
+._login_right_all {
+    position: relative;
+    flex: 0 0 100%;
+    height: auto;
+}
+._login_main {
+    padding: 25px 20px 30px;
+}
+._login_logo_img {
+    height: 34px;
+    left: -15px;
+    top: 17px;
+}
+._over_card_main {
+    flex: 0 0 100%;
+    margin-top: 20px;
+}
+._over_number {
+    flex: 0 0 100%;
+}
+._ourCourse_menu_ul li {
+    margin: 9px 3px;
+    width: 46%;
+}
+._explore_card {
+    margin-bottom: 20px;
+}
+._home_title {
+    margin-bottom: 15px;
+}
+._1title {
+    font-size: 16px;
+}
+._slider_drag {
+    height: 50px;
+    width: 50px;
+    font-size: 11px;
+    flex: 0 0 50px;
+    margin: 0 8px 0;
+}
+._explore_card {
+    margin-bottom: 20px;
+}
+._home_next_text {
+    font-size: 12px;
+}
+._home_next_text i {
+    font-size: 10px;
+}
+._learn_text {
+    margin: 18px auto 23px;
+    width: 100%;
+}
+._learn {
+    padding: 41px 0 28px;
+}
+._choose_plan_menu {
+    width: 100%;
+}
+._choose_plan_all {
+    padding: 22px 0 0px;
+}
+._choose_plan_main {
+    margin-bottom: 20px;
+}
+._students {
+    padding: 98px 0 15px;
+}
+._students_right_text {
+    margin: 16px 0px 23px;
+}
+._students_right {
+    padding: 26px 0 0;
+}
+._students_left_text {
+    font-size: 21px;
+    line-height: 30px;
+}
+._students_left {
+    height: 272px;
+}
+._students_left_text_main {
+    padding-top: 0;
+    padding-right: 22px;
+}
+._students_left_three_pic {
+    height: 55px;
+    width: 55px;
+    bottom: 9px;
+    right: 8px;
+}
+._students_left_five_pic {
+    height: 42px;
+    width: 42px;
+    bottom: 15px;
+    left: 0;
+}
+._students_left_one_pic {
+    height: 95px;
+    width: 95px;
+    top: -47px;
+    left: 73px;
+}
+._students_left_two_pic {
+    height: 45px;
+    width: 45px;
+    top: 20px;
+    right: 50px;
+}
+._homeSearch_left_title {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+._homeSearch_text {
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+._over_number_text {
+    font-size: 21px;
+    line-height: 26px;
+}
+._1banner_title {
+    font-size: 22px;
+    margin-top: 0;
+}
+._1banner_text {
+    font-size: 15px;
+    margin: 12px 0 15px;
+}
+._1banner_search {
+    margin-bottom: 40px;
+}
+._1banner_search_input input {
+    font-size: 15px;
+    padding: 0 4px 0 0px;
+}
+._1banner_main_pic {
+    margin: 0px 27px 95px;
+}
+._1banner:before {
+    background-size: 96%, auto;
+    background-position: bottom;
+    width: 100%;
+    left: 0;
+}
+._1banner_main {
+    padding: 31px 0 0;
+}
+._over {
+    padding: 55px 0 25px;
+}
+._explore_card_pic {
+    height: 160px;
+}
+._latest {
+    padding: 25px 00 0px;
+}
+._homeSearch {
+    padding: 30px 0;
+}
+._footer_top {
+    padding: 32px 0 29px;
+}
+._footer_info {
+    padding: 7px 0 9px;
+}
+._footer_search_label {
+    margin: 0 0 16px;
+}
+._footer_title {
+    margin: 46px 0 26px;
+}
+._footer_bottom_items {
+    margin: 7px 0;
+}
+._footer_bottom {
+    padding: 18px 0;
+}
+._1banner_main_pic_one {
+    width: 90px;
+    height: 90px;
+    top: -15px;
+    left: -18px;
+}
+._1banner_main_pic_one_img {
+    width: 42px;
+}
+._1banner_main_pic_three {
+    height: 60px;
+    width: 60px;
+    right: -22px;
+    bottom: 0;
+}
+._1banner_main_pic_three_img {
+    width: 28px;
+}
+._1banner_main_pic_two {
+    width: 68px;
+    height: 64px;
+    border-radius: 100px;
+    top: 54px;
+    right: -21px;
+}
+._1banner_main_pic_two_img {
+    width: 31px;
+}
+._menu_list {
+    display: none;
+}
+._ourCourse_card_by {
+    max-width: 186px;
+}
+
+
+
+}
+/* Mobile */
+
+/* Ipad */
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+._1banner_main {
+    padding: 64px 0 62px;
+}
+._1banner_title {
+    font-size: 24px;
+    margin-top: 13px;
+}
+._1banner_text {
+    font-size: 18px;
+    margin: 17px 0 20px;
+}
+._1banner:before {
+    width: 414px;
+    background-repeat: no-repeat;
+    background-size: 100%, auto;
+    background-position: bottom;
+}
+._over_number {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+}
+._ourCourse_menu_ul li {
+    width: 184px;
+    margin: 7px 6px;
+}
+._learn_text {
+    margin: 40px auto 50px;
+    font-weight: 500;
+    width: 90%;
+}
+._learn::before {
+    width: 91%;
+}
+._learn::before {
+    height: 1400px;
+    width: 91%;
+}
+._learn_items_title {
+    font-size: 17px;
+}
+._choose_plan_details {
+    padding: 3px 10px 20px;
+}
+._choose_plan_button {
+    font-size: 15px;
+    padding: 13px 15px;
+}
+._choose_plan_logo {
+    height: 70px;
+    width: 70px;
+    padding: 0 16px;
+    margin: 18px auto 13px;
+}
+._footer_title {
+    font-size: 20px;
+    margin: 0 0 25px;
+}
+
+}
+/* Ipad */
+
+/* Desktop 1366 */
+@media only screen and (max-width: 1500px) {
+
+    
+}

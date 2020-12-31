@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Acameny</title>
+		<!-- Font family -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<!-- BOOTSTRAP GRID CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<!-- COMMON CSS -->
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- RESPONSIVE CSS -->
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+		
+	</head>
+	<body>
+		<div id="main-wrapper">
+			<!-- Menu --> 
+			<nav v-if="$route.path != '/login' && $route.path != '/signUp'" class="_menu">
+			  <div class="_menu_con">
+				<div class="_menu_main">
+				  <div class="_menu_logo">
+					<div class="_menu_logo_pic">
+					  <a href="index.html"><img class="_menu_logo_img" style="margin-left: -39px;" src="img/logo.png" alt="" title=""></a>
+					</div>
+				  </div>
+	  
+				  <div class="_menu_search">
+					<div class="_menu_search_main">
+					  <div class="_menu_search_icon"><i class="fas fa-search"></i></div>
+					  <div class="_menu_search_input">
+						<input type="text" placeholder="What is your course">
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="_menu_right">
+					<ul class="_menu_right_ul">
+					  <li>
+						<select class="_menu_right_select">
+						  <option value="volvo">English</option>
+						  <option value="volvo">Bangla</option>
+						</select>
+					  </li>
+	  
+					  <li><a href="" href="signUp.html">Add New Account</a></li>
+	  
+					  <li>
+						<button class="_1btn _pre_icon" type="button"><i class="fas fa-user"></i> My Profile</button>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+			<!-- Menu end -->
+	  
+			<!-- Menu List -->
+			<div v-if="$route.path != '/login' && $route.path != '/signUp'" class="_menu_list">
+				<ul class="_menu_list_ul">
+					<li>
+					  <a href="index.html">Home</a>
+					</li>
+					<li>
+					  <a href="about.html">About</a>
+					</li>
+					<li>
+					  <a href="courses.html">Courses</a>
+					</li>
+					<li>
+					  <a href="bundleCourses.html">Bundle Courses</a>
+					</li>
+					<li>
+					  <a href="freeCourses.html">Free Courses</a>
+					</li>
+					<li>
+					  <a href="blog.html">Blog</a>
+					</li>
+					<li class="_active">
+					  <a href="contact.html">Contact</a>
+					</li>
+					<li>
+					  <a href="faq.html">Faq</a>
+					</li>
+					<li>
+					  <a href="forum.html">Forum</a>
+					</li>
+				</ul>
+	  
+				<div class="_menu_social">
+					<ul class="_menu_social_list">
+						<li>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fa-youtube"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Menu List -->
+	  
+			<div class="_main_layout">
+				<div class="_1main_content">
+                    <!-- Banner -->
+                    <div class="_2banner">
+                        <div class="container">
+                            <h2 class="_2banner_title">Contact</h2>
+                            <ul class="_2banner_menu">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="_2banner_layer_one"></div>
+                        <div class="_2banner_layer_two"></div>
+                    </div>
+                    <!-- Banner -->
+        
+                    <!-- Main content -->
+                    <div class="_courses">
+                        <div class="container">
+                            <div class="_courses_main">
+                                <h2 class="_1title _mar_b30">Get in Touch With Us</h2>
+        
+                                <div class="_contact_card_all">
+                                    <div class="row">
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_contact_card">
+                                                <div class="_contact_card_pic">
+                                                    <img class="_contact_card_img" src="img/home.png" alt="" title="">
+                                                </div>
+        
+                                                <div class="_contact_card_details">
+                                                    <p class="_contact_card_title">Visit Us</p>
+        
+                                                    <p class="_contact_card_value">70-80 Upper St Norwich NR2 1LT, NewYork, USA</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_contact_card _green">
+                                                <div class="_contact_card_pic">
+                                                    <img class="_contact_card_img" src="img/email.png" alt="" title="">
+                                                </div>
+        
+                                                <div class="_contact_card_details">
+                                                    <p class="_contact_card_title">Email</p>
+        
+                                                    <p class="_contact_card_value">info@tutforest.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                        <!-- Items -->
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_contact_card _orange">
+                                                <div class="_contact_card_pic">
+                                                    <img class="_contact_card_img" src="img/phone.png" alt="" title="">
+                                                </div>
+        
+                                                <div class="_contact_card_details">
+                                                    <p class="_contact_card_title">Phone</p>
+        
+                                                    <p class="_contact_card_value">+03601 885399</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Items -->
+                                    </div>
+                                </div>
+        
+                                <div class="_contact_main">
+                                    <div class="row">
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="_contact_map">
+                                                <img class="_contact_map_img" src="img/map.png" alt="" title="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-4">
+                                            <div class="_contact_form_all">
+                                                <p class="_contact_form_title">Send Us a Message</p>
+                                                <div class="_contact_form">
+                                                    <div class="_contact_form_input">
+                                                        <input class="_1input" placeholder="Name" type="text">
+                                                    </div>
+                                                    <div class="_contact_form_input">
+                                                        <input class="_1input" placeholder="Email" type="text">
+                                                    </div>
+                                                    <div class="_contact_form_input">
+                                                        <textarea rows="7" class="_1textarea" placeholder="Textarea"></textarea>
+                                                    </div>
+        
+                                                    <div class="_contact_form_button">
+                                                        <button class="_2btn _long _btn_large" type="button">Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main content -->
+                </div>
+	  
+			  <!-- Search -->
+			  <section v-if="$route.path != '/faq' && $route.path != '/forum' && $route.path != '/login' && $route.path != '/signUp'" class="_homeSearch">
+				  <div class="container">
+					  <div class="row align-items-end">
+						  <div class="col-12 col-md-6 col-lg-6">
+							  <div class="_homeSearch_left">
+								  <p class="_homeSearch_text">The Beginning of a New Asset Class</p>
+								  <h2 class="_homeSearch_left_title">Frequently Asked Questions</h2>
+							  </div>
+						  </div>
+	  
+						  <div class="col-12 col-md-6 col-lg-6">
+							  <div class="_homeSearch_main">
+								  <i class="fas fa-search"></i>
+								  <div class="_homeSearch_main_input">
+									  <input type="text" placeholder="Ask anything what do want to know?">
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </section>
+			  <!-- Search -->
+	  
+			  <!-- Footer -->
+			  <div v-if="$route.path != '/login' && $route.path != '/signUp'" class="_footer">
+				<div class="_footer_top">
+				  <div class="container">
+					<div class="row">
+					  <div class="col-12 col-md-5 col-lg-5">
+						<a href="">
+						  <img class="_footer_logo" src="img/footer_logo.png" alt="" title="">
+						</a>
+	  
+						<ul class="_footer_info">
+						  <li><i class="fas fa-envelope"></i> info@get-tutors.com</li>
+						  <li><i class="fas fa-map-marker-alt"></i> 59 West 46th Street, New York City. USA</li>
+						</ul>
+	  
+						<div class="_footer_search">
+						  <p class="_footer_search_label">Enter your email</p>
+						  <div class="_footer_search_main">
+							<div class="_footer_search_main_input">
+							  <input type="" placeholder="Your email address">
+							</div>
+	  
+							<button class="_footer_search_button"><i class="fas fa-arrow-right"></i></button>
+						  </div>
+						</div>
+	  
+						<ul class="_footer_social">
+						  <li>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+						  </li>
+						  <li>
+							<a href=""><i class="fab fa-twitter"></i></a>
+						  </li>
+						  <li>
+							<a href=""><i class="fab fa-instagram"></i></a>
+						  </li>
+						</ul>
+					  </div>
+	  
+					  <div class="col-12 col-md col-lg">
+						<p class="_footer_title">Usefull Links</p>
+	  
+						<ul class="_footer_list">
+						  <li>
+							<a href="">Become a Students</a>
+						  </li>
+						  <li>
+							<a href="">Start Tution</a>
+						  </li>
+						  <li>
+							<a href="">Addiction Help</a>
+						  </li>
+						  <li>
+							<a href="">Our Consultant </a>
+						  </li>
+						  <li>
+							<a href="">Management</a>
+						  </li>
+						</ul>
+					  </div>
+	  
+					  <div class="col-12 col-md col-lg">
+						<p class="_footer_title">About</p>
+	  
+						<ul class="_footer_list">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="courses.html">Courses</a>
+							</li>
+							<li>
+								<a href="bundleCourses.html">Bundle Courses</a>
+							</li>
+							<li>
+								<a href="freeCourses.html">Free Courses</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a href="faq.html">Faq</a>
+							</li>
+							<li>
+								<a href="forum.html">Forum</a>
+							</li>
+						</ul>
+					  </div>
+	  
+					  <div class="col-12 col-md col-lg">
+						<p class="_footer_title">Terns</p>
+	  
+						<ul class="_footer_list">
+						  <li>
+							<a href="">Privacy Policy</a>
+						  </li>
+						  <li>
+							<a href="">Terns & Conditions</a>
+						  </li>
+						  <li>
+							<a href="">Copyright Policy</a>
+						  </li>
+						  <li>
+							<a href="">Security</a>
+						  </li>
+						  <li>
+							<a href="">Fees & Change</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="_footer_bottom">
+				  <div class="container">
+					<div class="_footer_bottom_main">
+					  <div class="_footer_bottom_items">
+						<p class="_footer_bottom_text">Terms & Condition</p>
+					  </div>
+					  <div class="_footer_bottom_items">
+						<p class="_footer_bottom_text">89,8765 Registered Students</p>
+					  </div>
+					  <div class="_footer_bottom_items">
+						<p class="_footer_bottom_text">All right reserved@shoemaster 2020</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Footer -->
+			</div>
+		  </div>    
+	</body>
+</html>
